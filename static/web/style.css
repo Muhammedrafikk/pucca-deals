@@ -1,0 +1,203 @@
+body {
+  background-color: #05001f !important; 
+  zoom: .9;
+}
+
+
+.cstm-height-card .card-img-top {
+    height: 100px;
+    object-fit: cover;
+  
+  }
+
+  .container{
+  margin: 70px -10px;
+
+  }
+
+  .card{
+    /* background-color: #f8f9fa;  */
+    margin:10px 1px;
+  }
+
+  /* .row>* {
+   background-image: linear-gradient( 135deg, #d89531 20%, #ee6439 100%);
+  
+  } */
+
+
+  .ec-product-inner .ec-pro-image {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    /* border-top:  2px solid #5d5c5c; */
+    /* border-right:  2px solid #5d5c5c; */
+    border-bottom: 1px solid #dbd9d9;
+    /* border-left:  2px solid #5d5c5c;  */
+     /* border-radius: 5px 5px 0px 0px;  */
+    cursor: pointer;
+    border-radius: 5px;
+
+  }
+  
+  .ec-product-inner .ec-pro-image .image img {
+    z-index: 1;
+    max-width: 100%;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    border-radius: 5px;
+    
+  }
+ 
+  
+ 
+  .ec-product-inner:hover .ec-pro-image .image img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+
+  }
+  .ec-product-inner:hover .ec-pro-image .image img:not(:last-child) {
+    opacity: 0;
+    
+  }
+  .ec-product-inner:hover .ec-pro-image .image img.hover-image {
+    opacity: 1;  
+
+  }
+  
+
+/* logo */
+
+.circle {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.circle img{
+  width: 100px;
+  height: 100px;
+}
+
+
+/* title */
+
+
+.text-effect p{
+  text-indent: 0; 
+  color: #fff;
+  /* margin: 16px 10px; */
+}
+
+.card-title{
+  font-weight: 750;
+  font-size: 23px;
+}
+
+.text-effect h2 {
+  color: #ffff; 
+}
+
+
+.card-body {
+  /* border-top: 0px solid #5d5c5c;
+  border-right: 2px solid #5d5c5c;
+  border-bottom: 2px solid #5d5c5c;
+  border-left: 2px solid #5d5c5c;
+  border-radius: 0px 0px 5px 5px; */
+  background: #f7f6e6;
+  /* background-image: linear-gradient(135deg, #5d5768 10%, rgb(24, 7, 58) 100%); */
+} 
+
+
+
+
+.card-body .card-title a {
+  color: #06002d; 
+  text-decoration: none; 
+}
+
+.card-title{
+  text-transform: uppercase;
+  
+
+}
+
+/* offer */
+
+.ribbon {
+  width: 60px;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 3px;
+  background: #ec705f;
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  left: 10px; 
+  z-index: 999;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  -webkit-transition: all 0.3s ease;
+}
+
+/* .ec-product-inner:hover .ribbon {
+  width: 75px;
+  padding: 7px 0;
+  font-size: 16px;
+} */
+
+.ribbon:hover {
+  width: 75px;
+  padding: 7px 0;
+  font-size: 16px;
+}
+
+.ec-product-inner:hover .ec-pro-image .image img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* and (max-width: 500px) {
+  .col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+} */
+
+
+@media (max-width: 500px) {
+  .card-title{
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 425px) {
+  .card-title{
+    font-size: 13px;
+
+  }
+  .card-body {
+    height: 45px;
+  }
+
+  .ribbon {
+    width: 40px;
+    font-size: 11px;
+    padding: 2.5px 0;
+  }
+
+  .ribbon:hover {
+    width: 40px;
+    padding: 2.6px 0;
+    font-size: 16px;
+  }
+  
+}
+

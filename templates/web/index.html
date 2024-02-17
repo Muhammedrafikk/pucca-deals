@@ -1,0 +1,42 @@
+{% extends 'web/partials/base.html' %}
+{% load static %}
+{% block title %}Pucca Deals{% endblock %}
+
+{% block content %}
+<section class="container text-center">
+  <div class="circle">
+    <a href="{% url "product:index" %}"><img src="{% static "web/image/banner.jpg" %}" alt="Logo"></a>
+  </div>
+  <div class="text-effect">
+    <h2> PUCCA DEALS</h2> <br>
+    <p>Pucca Deals is a participant of Amazon LLC Associate Program which is an affiliate advertising program designed for website owners to earn fees by advertising and linking to Amazon.</p><br>
+  </div>
+  <div class="row mb-5">
+    {% for product in products %}
+    <div class="col-lg-4 col-md-6 col-sm-6 col-6 rts">
+      <div class="card">
+        <div class="ec-product-inner">
+          <div class="ec-pro-image">
+            <a href="{{ product.link }}"><div class="ribbon">#{{product.offer}}</div></a>
+            <a href="{{ product.link }}" class="image"><img class="main-image" src="{{product.image.url}}" alt="Product" /></a>
+          </div>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><a href="{{ product.link }}">{{product.title}}</a></h5>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  
+</section>
+{% endblock %}
+
+{% block css_plugins %}{% endblock %}
+{% block js_plugins %}{% endblock %}
+
+{% block javascript %}
+<script>
+  console.log("This will run only in index.html")
+</script>
+{% endblock %}
